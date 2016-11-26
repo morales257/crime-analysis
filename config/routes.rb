@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'crime/index'
+
+  get 'crime/new'
+
+  get 'crime/create'
+
+  get 'crime/update'
+
+  get 'crime/destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

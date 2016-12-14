@@ -4,9 +4,8 @@ one:
   objid: 1
   time: 2016-11-24 20:43:31
   district: MyString
-  type: 
+  call_type: Arrest
   streets: MyString
-  string: MyString
   longitude: 1.5
   latitude: 1.5
 
@@ -14,8 +13,7 @@ two:
   objid: 1
   time: 2016-11-24 20:43:31
   district: MyString
-  type: 
+  call_type: Assault
   streets: MyString
-  string: MyString
   longitude: 1.5
   latitude: 1.5

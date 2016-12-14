@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,6 +24,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty', '~> 0.13.7'
 
 gem 'pry', '~> 0.10.4'
+#geocodig and distance calculation
+gem 'geokit', '~> 1.10'
+#geokit plugin for active Record
+gem 'geokit-rails', '~> 2.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

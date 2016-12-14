@@ -1,6 +1,7 @@
 require 'httparty'
 require 'json'
 require 'pry'
+require 'csv'
 
 class PoliceCalls
 
@@ -30,8 +31,11 @@ class PoliceCalls
         @crime.longitude = i['geometry']['x']
         @crime.latitude = i['geometry']['y']
 
+        crime_details = [@crime.call_type, @crime.time, @crime.longitude, @crime.latitude]
+
         if @crime.save
           puts "Crime #{@crime.objid} added."
+          add_data(crime_details)
           true
         else
         puts "Cannot add #{@crime.objid} - #{@crime.errors.full_messages}"
@@ -40,6 +44,14 @@ class PoliceCalls
       end
 
     end
+  end
+
+  def add_data(data)
+    puts "adding data to csv.."
+    CSV.open("police_calls.csv", "a") do |csv|
+      csv << data
+    end
+    puts "..done."
   end
 
 

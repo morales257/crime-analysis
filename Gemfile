@@ -28,6 +28,9 @@ gem 'pry', '~> 0.10.4'
 gem 'geokit', '~> 1.10'
 #geokit plugin for active Record
 gem 'geokit-rails', '~> 2.2'
+#S3 file storage
+gem 'aws-sdk'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

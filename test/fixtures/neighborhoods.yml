@@ -1,8 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  coordinates: MyText
+  name: North York
+  coordinates: <%= [[0,0],[0,5],[5,5],[5,0],[0,0]].to_yaml.inspect %>
 
 two:
   name: MyString

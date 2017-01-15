@@ -4,6 +4,7 @@ class Crime < ActiveRecord::Base
                    :lng_column_name => :longitutde
   validates :objid, uniqueness: true
 
+
   def geolocate
     Geokit::LatLng.new(self.latitude, self.longitude)
   end

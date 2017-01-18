@@ -1,5 +1,6 @@
 class Neighborhood < ActiveRecord::Base
   acts_as_mappable :default_units => :kms
+  validates :name, presence: true
 
   serialize :coordinates
 

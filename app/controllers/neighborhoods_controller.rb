@@ -1,6 +1,6 @@
 class NeighborhoodsController < ApplicationController
   def index
-    @neighborhoods = Neighborhood.all
+    @neighborhoods = Neighborhood.paginate(page: params[:page])
   end
 
   def show

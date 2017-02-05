@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'static_pages/neighbourhood_maps'
+
   resources :neighborhoods
 
   get 'crime/index'
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   get 'crime/update'
 
   get 'crime/destroy'
+
+  get 'neighborhood-map' => 'static_pages#neighbourhood_maps'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

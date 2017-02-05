@@ -1,7 +1,17 @@
 <h1>Neighborhoods</h1>
 
-<ul>
-  <% @neighborhoods.each do |neighborhood| %>
-    <li><%= link_to neighborhood.name, neighborhood %></li>
+<div class="row">
+  <iframe id="map-viewer" src="<%= neighborhood_map_path %>"></iframe>
+</div>
+
+<div class="row">
+  <% @neighborhoods.each do |neigh| %>
+    <div class="col-md-4">
+    <div class="neighbourhood-preview">
+      <%= link_to neigh.name, neigh %>
+    </div>
+    </div>
   <% end %>
-</ul>
+</div>
+
+<%= will_paginate @neighborhoods %>

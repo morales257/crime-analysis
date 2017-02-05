@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/neighbourhood_maps'
+  root "static_pages#home"
 
   resources :neighborhoods
 

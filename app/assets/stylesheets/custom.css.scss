@@ -6,6 +6,11 @@ body {
   padding-top: 60px;
 }
 
+h1 {
+  font-weight: 300;
+  margin: 25px 25px 25px 0;
+}
+
 h2,
 h3 {
   margin: 10px;
@@ -33,8 +38,20 @@ textarea {
 /* header */
 
 .navbar {
-  background-color: #2DCC70;
+  background-color: #1FB1D8;
+  border-color: solid 1px #1FB1D8;
+  /*#2DCC70;*/
 }
+
+.navbar-inverse {
+  background-color: #1FB1D8;
+  border-color: #1FB1D8;
+  /*#2DCC70;*/
+}
+
+.navbar-inverse .navbar-nav > li > a {
+      color: #FFF;
+  }
 
 #logo {
   float: left;
@@ -51,6 +68,87 @@ textarea {
   color: #fff;
   text-decoration: none;
 }
+
+/** Home Page **/
+
+.subnav-links > a{
+  color: #000;
+  text-transform: uppercase;
+  font-weight:500;
+}
+
+.opening-header {
+  border-top: solid 2px #000;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.opening-statement {
+  font-size: 1.7em;
+  line-height: 1em;
+}
+
+.opening-btn {
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  min-width: 100px;
+  line-height: 40px;
+  outline: 0;
+  color: #FFF;
+  border: solid 1px #1FB1D8;
+  background: none;
+  background-color: #1FB1D8;
+  border-radius: 0 0 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+
+#recent-listings {
+  margin: 10px 0 10px 0;
+  border-top: solid 2px #000;
+}
+
+.listing-summ {
+  padding: 10px;
+}
+
+.details-info {
+  border-top: 1px solid #E5E5E5;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+}
+
+.bed-info {
+  border-right: 1px solid #E5E5E5;
+  padding: 5px;
+}
+
+.bath-info {
+  padding: 3px;
+}
+
+.listing-img > img {
+  length: 178px;
+  width: 232px;
+  display: block;
+  margin: 0 auto;
+}
+
+#trends {
+  margin: 10px 0 10px 0;
+  border-top: solid 2px #000
+}
+
+#insight {
+  margin: 10px 0 10px 0;
+  border-top: solid 2px #000
+}
+
 /**
 * Create a position for the map
 * on the page */

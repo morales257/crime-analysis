@@ -1,43 +1,116 @@
 <div class="container">
   <div class="row">
-    <nav>
-      <ul class="nav navbar-nav navbar-left">
-        <li><%= link_to "Resources", "#" %></li>
-        <li><%= link_to "Agents", "#" %></li>
-        <li><%= link_to "Blog", "#" %></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="row">
-  <h1>Toronto Real Estate</h1>
-    <div class="col-md-12">
-      <p>There are <u>thousands</u> of homes on the market.</p>
-      <p>Reesy helps you find <u>yours</u>.</p>
-      <button>Find Your Home</button>
+    <div class="subnav">
+      <nav>
+        <ul class="nav navbar-nav navbar-left">
+          <li class="subnav-links"><%= link_to "Resources", "#" %></li>
+          <li class="subnav-links"><%= link_to "Agents", "#" %></li>
+          <li class="subnav-links"><%= link_to "Blog", "#" %></li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <div class="row">
+
+  <div id="opening-header" class="row">
+
+        <div class="col-md-12">
+          <div class="opening-header">
+            <h1>Toronto Real Estate</h1>
+              <p class="opening-statement">There are <u>thousands</u> of homes on the market.</p>
+              <p class="opening-statement">Reesy helps you find the <u>one</u>.</p>
+              <button class="opening-btn">Find Your Home</button>
+          </div>
+        </div>
+  </div>
+
+  <div id="recent-listings" class="row">
     <h1>Recent Listings</h1>
     <div class="col-md-3">
       <div class="listing-brief">
         <div class="listing-img">
-          <img style="length: 178px; width: 232px; margin: auto;" src="http://westerrahomes.ca/wp-content/themes/hmb3/images/sliders/slide2.jpg" alt="home">
+          <img src="http://westerrahomes.ca/wp-content/themes/hmb3/images/sliders/slide2.jpg" alt="home">
         </div>
         <div class="listing-summ">
-          <ul>
-            <li>Address</li>
-            <li>Price</li>
-            <li>Bed</li>
-            <li>Bath</li>
-          </ul>
+          <div class="location-info">
+            <span>Address</span>
+          </div>
+          <div class="price-info">
+            <span>Price</span>
+          </div>
+          <div class="details-info">
+            <span class="bed-info">Bed</span>
+            <span class="bath-info">Bath</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="listing-brief">
+        <div class="listing-img">
+          <img src="http://westerrahomes.ca/wp-content/themes/hmb3/images/sliders/slide2.jpg" alt="home">
+        </div>
+        <div class="listing-summ">
+          <div class="location-info">
+            <span>Address</span>
+          </div>
+          <div class="price-info">
+            <span>Price</span>
+          </div>
+          <div class="details-info">
+            <span class="bed-info">Bed</span>
+            <span class="bath-info">Bath</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="listing-brief">
+        <div class="listing-img">
+          <img src="http://westerrahomes.ca/wp-content/themes/hmb3/images/sliders/slide2.jpg" alt="home">
+        </div>
+        <div class="listing-summ">
+          <div class="location-info">
+            <span>Address</span>
+          </div>
+          <div class="price-info">
+            <span>Price</span>
+          </div>
+          <div class="details-info">
+            <span class="bed-info">Bed</span>
+            <span class="bath-info">Bath</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="listing-brief">
+        <div class="listing-img">
+          <img src="http://westerrahomes.ca/wp-content/themes/hmb3/images/sliders/slide2.jpg" alt="home">
+        </div>
+        <div class="listing-summ">
+          <div class="location-info">
+            <span>Address</span>
+          </div>
+          <div class="price-info">
+            <span>Price</span>
+          </div>
+          <div class="details-info">
+            <span class="bed-info">Bed</span>
+            <span class="bath-info">Bath</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
+
+  <div id="trends" class="row">
     <h1>Trends</h1>
   </div>
-  <div class="row">
+
+  <div id="insight" class="row">
     <h1>Editor's Insight</h1>
   </div>
 </div>

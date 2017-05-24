@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
 
   def agents
   end
+
+  def listing
+  end
 end

@@ -35,6 +35,26 @@ textarea {
   resize: vertical;
 }
 
+img {
+  width: 100%;
+}
+
+div.inline { float: left;}
+.clearBoth { clear:both; }
+
+table{
+  width: 500px;
+  border-collapse: collapse;
+  td, th {
+  padding: 5px;
+  }
+  tr:nth-child(odd) {
+    background-color: #efefef;
+  }
+}
+
+
+/*section { min-height: 500px;}
 /* header */
 
 .navbar {
@@ -123,6 +143,16 @@ textarea {
   padding: 3px;
 }
 
+.location-info {
+  font-weight: bold;
+  color: #000;
+}
+
+.price-info {
+  font-weight: bold;
+  color: #1FB1D8;
+}
+
 .bed-info {
   border-right: 1px solid #E5E5E5;
   padding: 5px;
@@ -137,6 +167,64 @@ textarea {
   width: 232px;
   display: block;
   margin: 0 auto;
+}
+
+.listing-details {
+  width: 100%;
+  height: 100%;
+}
+
+.major-details-info {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+
+}
+
+.table-header {
+  font-size: 2em;
+  color: #1FB1D8;
+}
+
+.options-column {
+  button {
+    text-align: center;
+    background-color: #1FB1D8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+}
+
+.contact-listing {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  form {
+    height: 300px;
+    padding: 10px;
+    background-color: #efefef;
+    box-sizing: inherit;
+
+    input {
+      width: 95%;
+      padding: 3px;
+      margin: 4px;
+    }
+    button {
+      text-align: center;
+      background-color: #1FB1D8;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 5px;
+      margin-left: 0px auto;
+      display: inline-block;
+    }
+  }
+
 }
 
 #trends {

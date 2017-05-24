@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :neighborhoods
 
+  get 'listing' => 'static_pages#listing'
+
   get 'crime/index'
 
   get 'crime/new'
